@@ -1,4 +1,3 @@
-//your JS code here. If required.
 function sleep(ms) {
             return new Promise(resolve => setTimeout(resolve, ms));
         }
@@ -8,9 +7,9 @@ function sleep(ms) {
             const outputDiv = document.getElementById('output');
             const submitButton = document.getElementById('btn');
             
-            // Show loading state
-            outputDiv.textContent = `Waiting ${delayMs}ms to display message...`;
-            outputDiv.className = 'loading';
+            // Clear the output div and disable button during delay
+            outputDiv.textContent = '';
+            outputDiv.className = '';
             submitButton.disabled = true;
             submitButton.textContent = 'Please wait...';
             
